@@ -1,0 +1,15 @@
+{
+  "name": "fetch-once-q",
+  "version": "1.0.3",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel src/index.js --out-file dist/index.js",
+    "dist": "npm run build && npm version patch && npm publish"
+  },
+  "devDependencies": {
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1"
+  },
+  "description": "Fetch once even when multiple fetch were triggered, and return json response"
+}
